@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="userName_size">18sp</dimen>
+    <dimen name="userName_marginTop">20dp</dimen>
+    <dimen name="imgUser_marginTop">20dp</dimen>
+</resources>
