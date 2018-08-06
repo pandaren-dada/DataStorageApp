@@ -16,11 +16,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:src="@drawable/profile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/imgUser_marginTop"/>
+            android:layout_marginTop="@dimen/imgProfile_marginTop"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,6 +36,121 @@
             android:textSize="@dimen/userName_size"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/userName_marginTop"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userName_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColorHint="#ccc">
+
+            <EditText
+                android:id="@+id/userName_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/textColor_white"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColorHint="#ccc">
+
+            <EditText
+                android:id="@+id/password_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/textColor_white"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/signIn_button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/button_marginTop"
+            android:text="Sign in"
+            android:textColor="@color/textColor_white"
+
+            android:onClick="btn_signIn"/>
+
+        <Button
+            android:id="@+id/loadData_button"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/button_marginTop"
+            android:text="Load Data"
+            android:textColor="@color/textColor_white"
+
+            android:onClick="btn_loadData"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textColor="#ccc"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In With"
+            android:textColor="#ccc"
+            android:layout_gravity="center"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/facebook_signIn"
+                android:src="@drawable/facebook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/white_cirle"
+                android:padding="4dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/google_signIn"
+                android:src="@drawable/google"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_cirle"
+                android:padding="4dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/twitter_signIn"
+                android:src="@drawable/twitter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/white_cirle"
+                android:padding="4dp"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
