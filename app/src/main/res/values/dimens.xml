@@ -4,4 +4,6 @@
     <dimen name="userName_marginTop">20dp</dimen>
     <dimen name="imgProfile_marginTop">20dp</dimen>
     <dimen name="button_marginTop">10dp</dimen>
+    <dimen name="textSize_24sp">24sp</dimen>
+    <dimen name="marginTop_20dp">20dp</dimen>
 </resources>

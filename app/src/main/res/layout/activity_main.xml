@@ -9,8 +9,6 @@
     tools:context=".MainActivity"
     android:background="@color/background">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -52,7 +50,6 @@
                 android:drawableLeft="@drawable/ic_person_outline_black_24dp"
                 android:drawablePadding="10dp"
                 android:textColor="@color/textColor_white"/>
-
 
         </android.support.design.widget.TextInputLayout>
 
@@ -128,7 +125,7 @@
                 android:src="@drawable/facebook"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/white_cirle"
+                android:background="@drawable/facebook_icon_background"
                 android:padding="4dp"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -138,7 +135,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/white_cirle"
+                android:background="@drawable/googleplus_icon_background"
                 android:padding="4dp"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -146,12 +143,17 @@
                 android:src="@drawable/twitter"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/white_cirle"
+                android:background="@drawable/twitter_icon_background"
                 android:padding="4dp"/>
 
         </LinearLayout>
 
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+        </ListView>
     </LinearLayout>
 
 </ScrollView>

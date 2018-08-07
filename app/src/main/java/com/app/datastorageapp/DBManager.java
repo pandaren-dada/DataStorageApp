@@ -18,6 +18,7 @@ public class DBManager {
     static final String tableName = "Member";
     static final String colUserName = "Username";
     static final String colPassword = "Password";
+    static final String colId = "Id";
     static final int dbVersion = 1;
 
     static final String createTable = " CREATE TABLE IF NOT EXISTS "+ tableName +
